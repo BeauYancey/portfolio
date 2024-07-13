@@ -34,9 +34,9 @@ function Dock({ refs }) {
     <nav className='dock'>
       <h1><a href='#'>Beau Yancey</a></h1>
       <h3>Fullstack Developer</h3>
-      <img className='headshot' alt='Beau' src='/headshot.png' style={{width: '8em', height: '8em', borderRadius: '4em', backgroundColor: '#8DA0D1A0'}}/>
+      <img className='headshot' alt='Beau' src='/headshot.png' />
       <p>I make things.</p>
-      <ul>
+      <ul className='nav-list'>
         <li>
           <a className={'nav-link' + (active === 'about' ? ' active':'')} href='#about'>
             <span className='nav-indicator'></span>
@@ -56,7 +56,7 @@ function Dock({ refs }) {
           </a>
         </li>
       </ul>
-      <ul style={{display: 'flex', flexDirection: 'row', gap: '1em'}}>
+      <ul className='social-links'>
         <li><a href='https://github.com/BeauYancey' target='_blank'><img id='github-logo' className='social' src='/github.png'/></a></li>
         <li><a href='https://www.instagram.com/beaujyancey/' target='_blank'><img className='social' src='/insta.png'/></a></li>
         <li><a href='https://www.linkedin.com/in/beau-yancey/' target='_blank'><img className='social' src='/linkedin.png'/></a></li>

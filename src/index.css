@@ -23,6 +23,8 @@ body {
   padding: 5vh 10vw;
 }
 
+/* App.jsx */
+
 .content {
   display: flex;
   flex-direction: row;
@@ -33,8 +35,22 @@ section {
   scroll-margin-top: 5vh;
 }
 
+.sticky-header {
+  display: none;
+}
+
 p {
   font-size: 1.1em;
+}
+
+.inline-imgs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.inline-imgs > img {
+  width: 40%;
+  object-fit: cover;
 }
 
 .hover-info {
@@ -44,7 +60,6 @@ p {
 
 .hover-info .hidden-info {
   visibility: hidden;
-  width: 120px;
   background-color: #DFE6F5;
   color: #213547;
   text-align: center;
@@ -62,12 +77,50 @@ p {
   visibility: visible;
 }
 
+main {
+  width: 55vw;
+}
+
+a, .hover-info {
+  text-decoration: none;
+  color: #597DB0;
+}
+
+#experience > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+#contact > div {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+#contact img[alt="Beau"] {
+  height: 65vh;
+  object-fit: cover;
+}
+
+#contact img[alt="Hayley and Beau"] {
+  display: none;
+}
+
+/* Dock.jsx */
+
 .dock {
   position: sticky;
   top: 5vh;
   height: calc(100% - 5vh);
   width: 25vw;
   min-width: 10em;
+}
+
+.headshot {
+  width: 8em;
+  height: 8em;
+  background-color: #8DA0D1A0;
+  border-radius: 4em;
 }
 
 .dock h1 {
@@ -84,13 +137,10 @@ p {
   margin-top: 3em;
 }
 
-main {
-  width: 55vw;
-}
-
-a, .hover-info {
-  text-decoration: none;
-  color: #597DB0;
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
 }
 
 .nav-link {
@@ -121,6 +171,8 @@ a, .hover-info {
 
 .nav-text {
   text-transform: uppercase;
+  font-size: smaller;
+  font-weight: bold;
 }
 
 ul {
@@ -135,6 +187,9 @@ ul > li {
   height: 2em;
   object-fit: cover;
 }
+
+
+/* ContactForm.jsx */
 
 .form {
   display: flex;
@@ -192,6 +247,39 @@ ul > li {
 }
 
 
+/* ExCard.jsx */
+
+.ex-card {
+  background-color: #DFE6F560;
+  display: flex;
+  padding: 2em;
+  border-radius: 2em;
+}
+
+.ex-dates {
+  width: 20%
+}
+
+.ex-info {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 1em;
+}
+
+.ex-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.skill {
+  background-color: #8DA0D160;
+  padding: .25em .5em;
+  border-radius: .5em;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #DFE6F5;
@@ -220,5 +308,90 @@ ul > li {
 
   #github-logo {
     filter: brightness(2000%)
+  }
+}
+
+@media (max-width: 1028px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .dock {
+    position: static;
+    width: 100%
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .social-links {
+    margin-top: 0 !important;
+  }
+
+  main {
+    width: 100%
+  }
+
+  section {
+    padding-bottom: 3em;
+  }
+  
+  .sticky-header {
+    display: block;
+    padding: .25em 0;
+    position: sticky;
+    top: 0;
+    background-color: #ffffffee;
+    width: 100%;
+    margin: 0;
+    color: #597DB0;
+  }
+
+  .ex-card {
+    flex-direction: column;
+  }
+
+  .ex-dates {
+    width: 100%;
+    font-size: .75em;
+  }
+
+  .ex-info {
+    width: 100%
+  }
+
+}
+
+@media (max-width: 640px) {
+  #contact {
+    display: block;
+  }
+
+  #contact > div {
+    display: flex;
+    flex-direction: column-reverse
+  }
+  #contact img[alt="Hayley and Beau"] {
+    display: inline;
+    width: 100%;
+    margin-top: 1em;
+    object-fit: cover;
+    height: auto;
+  }
+
+  #contact img[alt="Beau"] {
+    display: none
+  }
+}
+
+@media (max-width: 512px) {
+
+  img[alt="Beau and Hayley"] {
+    display: none;
+  }
+
+  img[alt="baking"] {
+    width: 100%
   }
 }
