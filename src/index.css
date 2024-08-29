@@ -279,38 +279,6 @@ ul > li {
   border-radius: .5em;
 }
 
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #DFE6F5;
-    background-color: #242424;
-  }
-  a, .hover-info {
-    color: #8DA0D1;
-  }
-
-  .input-title {
-    background-color: #7493BE;
-    border: 1px solid #7493BE;
-  }
-
-  .input-text {
-    border: #7493BE;
-  }
-
-  .btn {
-    background-color: #7493BE;
-  }
-
-  .btn:hover {
-    background-color: #597db0;
-  }
-
-  #github-logo {
-    filter: brightness(2000%)
-  }
-}
-
 @media (max-width: 1028px) {
   .content {
     flex-direction: column;
@@ -393,5 +361,40 @@ ul > li {
 
   img[alt="baking"] {
     width: 100%
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #DFE6F5;
+    background-color: #242424;
+  }
+  a, .hover-info {
+    color: #8DA0D1;
+  }
+
+  .sticky-header {
+    background-color: #242424ee;
+  }
+
+  .input-title {
+    background-color: #7493BE;
+    border: 1px solid #7493BE;
+  }
+
+  .input-text {
+    border: #7493BE;
+  }
+
+  .btn {
+    background-color: #7493BE;
+  }
+
+  .btn:hover {
+    background-color: #597db0;
+  }
+
+  #github-logo {
+    filter: brightness(2000%)
   }
 }

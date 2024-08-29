@@ -2,33 +2,36 @@ import { useRef } from 'react'
 import Dock from './Dock'
 import ExCard from './ExCard'
 import ContactForm from './ContactForm';
+import ProjectCard from './ProjectCard';
 
 function App() {
 
   const aboutRef = useRef(null);
   const xpRef = useRef(null);
   const contactRef = useRef(null);
+  const projectsRef = useRef(null)
 
   const refs = [
     {name: 'about', ref: aboutRef},
     {name: 'experience', ref: xpRef},
-    {name: 'contact', ref: contactRef}
+    {name: 'contact', ref: contactRef},
+    {name: 'projects', ref: projectsRef}
   ];
 
   const experience = [
     {
-      dates: '2024 - PRESENT',
+      dates: 'JUL - AUG 2024',
       role: 'Software Engineer Intern',
       co: 'SILAC Insurance',
       desc: 'Contribute to projects focusing on reducing technical debt, enhancing the unit testing framework, and bolstering security across a suite of applications',
-      skills: ['Django', 'C#', 'Unit Testing', 'Jira', 'Agile']
+      skills: ['Cross-Functional Collaboration', 'Django', 'SQL', 'Unit Testing', 'Scrum', 'Agile Methodologies']
     },
     {
       dates: '2022 - PRESENT', 
       role: 'Operations Analyst', 
       co: 'BYU Office of IT', 
       desc: 'Ensure production systems used by the Office of IT are reliable, performant, and secure. Work closely with developers and product managers to identify and resolve issues.',
-      skills: ['REST APIs', 'Team Leadership', 'Customer Service', 'Troubleshooting']
+      skills: ['REST APIs', 'Team Leadership', 'Customer Service', 'Troubleshooting', 'Quality Assurance', 'DevOps', 'Self Leadership']
     },
     {
       dates: 'JAN - APR 2023',
@@ -42,9 +45,39 @@ function App() {
       role: 'Student',
       co: 'Brigham Young University',
       desc: 'BS in Computer Science with an emphasis in Software Engineering. Classes included such topics as Web Development, Software Construction, Systems Programming, Data Structures and Algorithms, and UX Design.',
-      skills: ['HTML/CSS/JavaScript', 'Python', 'Java', 'C++', 'Node.js', 'React']
-    },
+      skills: ['HTML/CSS/JavaScript', 'Python', 'Java', 'C/C++', 'Node.js', 'React', 'Databases', 'Data Structures']
+    }
+  ]
 
+  const projects = [
+    {
+      name: 'The Deck Board Game Cafe',
+      link: 'https://thedeck.yanceydev.com',
+      tech: ['NodeJS', 'Express Server', 'MongoDB', 'ReactJS'],
+      desc: 'Site for a board game cafe startup with client facing information and an admin login.',
+      img: '',
+    },
+    {
+      name: 'Kanban Board',
+      link: 'https://kanban.yanceydev.com',
+      tech: ['NodeJS', 'Express Server', 'MySQL', 'ReactJS'],
+      desc: 'Work management website designed to resemble a kanban board. Includes login and collaboration features',
+      img: '',
+    },
+    {
+      name: 'Chess Server',
+      link: 'https://github.com/BeauYancey/chess',
+      tech: ['Java', 'Maven', 'Spark Server', 'JUnit Jupiter'],
+      desc: 'Online multiplayer chess server and a command line client built for a class. This service is not currently running.',
+      img: '',
+    },
+    {
+      name: 'Coming Soon',
+      link: '',
+      tech: ['NextJS', 'Tailwind CSS', 'Winston Logger', 'Websocket'],
+      desc: 'I\'m always working on more projects. Come back soon to see my new stuff. Reach out to me if you have a project you need built',
+      img: '',
+    }
   ]
 
   return (
@@ -84,6 +117,15 @@ function App() {
         </div>
         </section>
 
+        <section ref={projectsRef} id='projects'>
+          <h2 className='sticky-header' style={{marginBottom: '1em'}}>Projects</h2>
+          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1em'}}>
+            {projects.map(prj => (
+              <ProjectCard key={prj.name} project={prj} />
+            ))}
+          </div>
+        </section>
+
         <section ref={contactRef} id='contact'>
         <h2 className='sticky-header'>Contact</h2>
           <div>
@@ -92,8 +134,8 @@ function App() {
             <div>
               <p>
                 I am always looking for opportunities to bring your dreams to life. If you are looking to hire a developer 
-                with a commitment to excellence and an enthusiasm for learning new technologies, please don't hesitate to
-                reach out to me. Fill out this form and I'll get back to you as soon as I can :)
+                with a commitment to excellence and an enthusiasm for learning new technologies, reach out to me today. Fill 
+                out this form and I'll get back to you quickly :)
               </p>
               <ContactForm />
             </div>

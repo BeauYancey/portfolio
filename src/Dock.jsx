@@ -50,6 +50,12 @@ function Dock({ refs }) {
           </a>
         </li>
         <li>
+          <a className={'nav-link' + (active === 'projects' ? ' active':'')} href='#projects'>
+            <span className='nav-indicator'></span>
+            <span className='nav-text'>Projects</span>
+          </a>
+        </li>
+        <li>
           <a className={'nav-link' + (active === 'contact' ? ' active':'')} href='#contact'>
             <span className='nav-indicator'></span>
             <span className='nav-text'>Contact Me</span>
