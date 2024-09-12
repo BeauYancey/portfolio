@@ -3,6 +3,12 @@ import { useEffect, useState } from 'react';
 function Dock({ refs }) {
 
   const [active, setActive] = useState('about')
+  let githubLogo
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    githubLogo = '/github-white.png'
+  } else {
+    githubLogo = '/github.png'
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,7 +63,7 @@ function Dock({ refs }) {
         </li>
       </ul>
       <ul className='social-links'>
-        <li><a href='https://github.com/BeauYancey' target='_blank'><img id='github-logo' className='social' src='/github.png'/></a></li>
+        <li><a href='https://github.com/BeauYancey' target='_blank'><img className='social' src={githubLogo}/></a></li>
         <li><a href='https://www.instagram.com/beaujyancey/' target='_blank'><img className='social' src='/insta.png'/></a></li>
         <li><a href='https://www.linkedin.com/in/beau-yancey/' target='_blank'><img className='social' src='/linkedin.png'/></a></li>
       </ul>
