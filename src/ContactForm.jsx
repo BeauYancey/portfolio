@@ -10,7 +10,7 @@ function ContactForm() {
   const [error, setError] = useState('');
 
   async function sendEmail() {
-    const response = await fetch('/api/send', {
+    const response = await fetch('https://h8qxlmtby8.execute-api.us-east-1.amazonaws.com/prod/email', {
       method: 'post',
       body: JSON.stringify({
         name: name,
@@ -22,10 +22,10 @@ function ContactForm() {
         'Content-type': 'application/json; charset=UTF-8',
       }
     })
-    if (response.status === 200) {
+    if (response.ok) {
       setSent(true);
     }
-    if (response.status >= 400) {
+    else {
       const res = await response.json()
       console.log(res.msg)
       setSent(false);
