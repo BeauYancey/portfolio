@@ -373,10 +373,6 @@ ul > li {
     color: #8DA0D1;
   }
 
-  .sticky-header {
-    background-color: #242424ee;
-  }
-
   .input-title {
     background-color: #7493BE;
     border: 1px solid #7493BE;
@@ -388,13 +384,14 @@ ul > li {
 
   .btn {
     background-color: #7493BE;
+    color: #DFE6F5;
   }
 
   .btn:hover {
     background-color: #597db0;
   }
 
-  #github-logo {
-    filter: brightness(2000%)
+  .sticky-header {
+    background-color: #242424EE;
   }
 }
