@@ -52,14 +52,14 @@ function App() {
   const projects = [
     {
       name: 'The Deck Board Game Cafe',
-      link: 'https://thedeck.yanceydev.com',
+      link: 'https://github.com/BeauYancey/the-deck',
       tech: ['NodeJS', 'Express Server', 'MongoDB', 'ReactJS'],
       desc: 'Site for a board game cafe startup with client facing information and an admin login.',
       img: '',
     },
     {
       name: 'Kanban Board',
-      link: 'https://kanban.yanceydev.com',
+      link: 'https://github.com/BeauYancey/kanban',
       tech: ['NodeJS', 'Express Server', 'MySQL', 'ReactJS'],
       desc: 'Work management website designed to resemble a kanban board. Includes login and collaboration features',
       img: '',
