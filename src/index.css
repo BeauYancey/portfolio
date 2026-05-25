@@ -23,7 +23,7 @@ body {
   padding: 5vh 10vw;
 }
 
-/* App.jsx */
+/* App.tsx */
 
 .content {
   display: flex;
@@ -106,7 +106,7 @@ a, .hover-info {
   display: none;
 }
 
-/* Dock.jsx */
+/* Dock.tsx */
 
 .dock {
   position: sticky;
@@ -189,7 +189,7 @@ ul > li {
 }
 
 
-/* ContactForm.jsx */
+/* ContactForm.tsx */
 
 .form {
   display: flex;
@@ -247,7 +247,7 @@ ul > li {
 }
 
 
-/* ExCard.jsx */
+/* ExCard.tsx */
 
 .ex-card {
   background-color: #DFE6F560;
