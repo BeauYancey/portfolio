@@ -1,6 +1,5 @@
 import { useRef } from 'react'
 import type { RefObject } from 'react'
-import ContactForm from './ContactForm'
 import Dock from './Dock'
 import ExCard from './ExCard'
 import ProjectCard from './ProjectCard'
@@ -157,11 +156,11 @@ function App() {
             <img src="/Heau.png" alt="Hayley and Beau" />
             <div>
               <p>
-                I am always looking for opportunities to bring your dreams to life. If you are looking to hire a developer
-                with a commitment to excellence and an enthusiasm for learning new technologies, reach out to me today. Fill
-                out this form and I'll get back to you quickly :)
+                I am always looking for opportunities to bring your dreams to life. If you want to hire a developer 
+                with a commitment to excellence and an enthusiasm for learning new technologies, reach out  to me 
+                on <a href="https://www.linkedin.com/in/beau-yancey" target="_blank" rel="noreferrer">LinkedIn</a> today.
               </p>
-              <ContactForm />
+              {/* <ContactForm /> */}
             </div>
           </div>
         </section>
