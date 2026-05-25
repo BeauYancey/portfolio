@@ -43,49 +43,49 @@ function App() {
 
   const experience: Experience[] = [
     {
-      dates: 'JUL - AUG 2024',
-      role: 'Software Engineer Intern',
-      co: 'SILAC Insurance',
-      desc: 'Contribute to projects focusing on reducing technical debt, enhancing the unit testing framework, and bolstering security across a suite of applications',
-      skills: ['Cross-Functional Collaboration', 'Django', 'SQL', 'Unit Testing', 'Scrum', 'Agile Methodologies'],
+      dates: '2025 - PRESENT',
+      role: 'Frontend Developer',
+      co: 'Etogy',
+      desc: 'Design, build, and maintain internal and external web applications. Design and implement REST APIs to interface between frontend code and the database.',
+      skills: ['C#', '.NET', 'TypeScript', 'React', 'MSSQL', 'Observability', 'System Design', 'Secure Coding']
     },
     {
-      dates: '2022 - PRESENT',
+      dates: '2022 - 2025',
       role: 'Operations Analyst',
       co: 'BYU Office of IT',
       desc: 'Ensure production systems used by the Office of IT are reliable, performant, and secure. Work closely with developers and product managers to identify and resolve issues.',
       skills: ['REST APIs', 'Team Leadership', 'Customer Service', 'Troubleshooting', 'Quality Assurance', 'DevOps', 'Self Leadership'],
     },
     {
-      dates: 'JAN - APR 2023',
-      role: 'Teaching Assistant',
-      co: 'BYU Dept. of Computer Science',
-      desc: 'Teach a class section twice a week. Aid students in completion of the labs ad projects. Teach them the basics of logical problem solving and computer programming in the context of Python.',
-      skills: ['Python', 'Teaching', 'Problem Solving'],
+      dates: 'JUL - AUG 2024',
+      role: 'Software Engineer Intern',
+      co: 'SILAC Insurance',
+      desc: 'Contribute to projects focusing on reducing technical debt, enhancing the unit testing framework, and bolstering security across a suite of applications',
+      skills: ['Cross-Functional Collaboration', 'Django', 'Unit Testing', 'Scrum', 'Agile Methodologies'],
     },
     {
       dates: '2019 - 2025',
       role: 'Student',
       co: 'Brigham Young University',
       desc: 'BS in Computer Science with an emphasis in Software Engineering. Classes included such topics as Web Development, Software Construction, Systems Programming, Data Structures and Algorithms, and UX Design.',
-      skills: ['HTML/CSS/JavaScript', 'Python', 'Java', 'C/C++', 'Node.js', 'React', 'Databases', 'Data Structures'],
+      skills: ['HTML/CSS/JavaScript', 'Python', 'Java', 'C/C++', 'Node.js', 'React', 'MySQL', 'MongoDB', "AWS"],
     },
   ]
 
   const projects: Project[] = [
     {
-      name: 'The Deck Board Game Cafe',
-      link: 'https://github.com/BeauYancey/the-deck',
-      tech: ['NodeJS', 'Express Server', 'MongoDB', 'ReactJS'],
-      desc: 'Site for a board game cafe startup with client facing information and an admin login.',
-      img: '',
+      name: 'Spiritual Gifts Quiz',
+      link: 'https://beauyancey.github.io/spiritual-gifts/',
+      tech: ['Vite', 'React', 'TypeScript'],
+      desc: 'Web quiz to help users identify, cultivate, and share their spiritual gifts.',
+      img: ''
     },
     {
-      name: 'Kanban Board',
-      link: 'https://github.com/BeauYancey/kanban',
-      tech: ['NodeJS', 'Express Server', 'MySQL', 'ReactJS'],
-      desc: 'Work management website designed to resemble a kanban board. Includes login and collaboration features',
-      img: '',
+      name: 'Unofficial Alexa Skill for YNAB',
+      link: 'https://github.com/BeauYancey/AlexaYNAB',
+      tech: ['JavaScript', 'AWS SDK', 'YNAB API', 'Beta Testing'],
+      desc: 'Alexa skill that integrates with the YNAB API to retrieve a user\'s budget information.',
+      img: ''
     },
     {
       name: 'Chess Server',
@@ -97,7 +97,7 @@ function App() {
     {
       name: 'Coming Soon',
       link: '',
-      tech: ['NextJS', 'Tailwind CSS', 'Winston Logger', 'Websocket'],
+      tech: ['NextJS', 'ASP .NET', 'React Native', 'Swift', 'Microservices'],
       desc: "I'm always working on more projects. Come back soon to see my new stuff. Reach out to me if you have a project you need built",
       img: '',
     },
@@ -116,14 +116,14 @@ function App() {
           </p>
           <p>
             I've been coding since I was 12. I didn't love it at first though, so I took a break from it and only
-            picked it up again when I was a freshman at Brigham Young University. I plan to graduate in December
+            picked it up again when I was a freshman at Brigham Young University. I graduated in December
             of 2025 with a degree in computer science and an emphasis in software engineering. I love building
             practical and elegant products, be it a website or software.
           </p>
           <p>
             When I'm not at my computer, I'm usually playing board games, baking with my <a className="hover-info">sourdough
-            starter<span className="hidden-info">His name is Andre</span></a>, reading a book, or spending quality time with my beautiful wife. Shoutout to my beloved Hayley for the artwork
-            on this page.
+            starter<span className="hidden-info">His name is Lars</span></a>, at the gym, or spending quality time with my 
+            beautiful wife. Shoutout to my beloved Hayley for the artwork on this page.
           </p>
           <div className="inline-imgs">
             <img src="/baking.png" alt="baking" />
