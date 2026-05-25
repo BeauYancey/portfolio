@@ -38,9 +38,8 @@ function Dock({ refs }: DockProps) {
   return (
     <nav className="dock">
       <h1><a href="#">Beau Yancey</a></h1>
-      <h3>Fullstack Developer</h3>
+      <h3>Software Engineer</h3>
       <img className="headshot" alt="Beau" src="/headshot.png" />
-      <p>I make things.</p>
       <ul className="nav-list">
         <li>
           <a className={'nav-link' + (active === 'about' ? ' active' : '')} href="#about">

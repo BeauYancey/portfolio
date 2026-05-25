@@ -43,14 +43,14 @@ function App() {
 
   const experience: Experience[] = [
     {
-      dates: '2025 - PRESENT',
+      dates: 'MAY 2025 - PRESENT',
       role: 'Frontend Developer',
       co: 'Etogy',
       desc: 'Design, build, and maintain internal and external web applications. Design and implement REST APIs to interface between frontend code and the database.',
       skills: ['C#', '.NET', 'TypeScript', 'React', 'MSSQL', 'Observability', 'System Design', 'Secure Coding']
     },
     {
-      dates: '2022 - 2025',
+      dates: 'SEP 2022 - APR 2025',
       role: 'Operations Analyst',
       co: 'BYU Office of IT',
       desc: 'Ensure production systems used by the Office of IT are reliable, performant, and secure. Work closely with developers and product managers to identify and resolve issues.',
@@ -123,7 +123,8 @@ function App() {
           <p>
             When I'm not at my computer, I'm usually playing board games, baking with my <a className="hover-info">sourdough
             starter<span className="hidden-info">His name is Lars</span></a>, at the gym, or spending quality time with my 
-            beautiful wife. Shoutout to my beloved Hayley for the artwork on this page.
+            beautiful wife. Shoutout to my beloved <a href="https://hayleynickels.framer.website/" target='_blank' rel="noreferrer">Hayley</a> for the 
+            artwork on this page.
           </p>
           <div className="inline-imgs">
             <img src="/baking.png" alt="baking" />
@@ -142,7 +143,7 @@ function App() {
 
         <section ref={projectsRef} id="projects">
           <h2 className="sticky-header" style={{ marginBottom: '1em' }}>Projects</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1em' }}>
+          <div className="projects-grid">
             {projects.map((prj) => (
               <ProjectCard key={prj.name} project={prj} />
             ))}

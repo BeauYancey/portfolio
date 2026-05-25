@@ -18,9 +18,12 @@
 }
 
 body {
-  margin: 0;
   display: flex;
-  padding: 5vh 10vw;
+  margin: 5vh 10vw;
+}
+
+#root {
+  width: 100%
 }
 
 /* App.tsx */
@@ -90,6 +93,12 @@ a, .hover-info {
   display: flex;
   flex-direction: column;
   gap: 2em;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1em;
 }
 
 #contact > div {
@@ -257,7 +266,8 @@ ul > li {
 }
 
 .ex-dates {
-  width: 20%
+  width: 20%;
+  padding-right: 1em;
 }
 
 .ex-info {
@@ -270,7 +280,7 @@ ul > li {
 .ex-skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .skill {
@@ -331,7 +341,17 @@ ul > li {
 
 }
 
+@media (max-width: 800px) {
+   .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
   #contact {
     display: block;
   }
