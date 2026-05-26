@@ -126,8 +126,8 @@ function App() {
             artwork on this page.
           </p>
           <div className="inline-imgs">
-            <img src="/baking.png" alt="baking" />
-            <img src="/Heau.png" alt="Beau and Hayley" />
+            <img src="baking.png" alt="baking" />
+            <img src="Heau.png" alt="Beau and Hayley" />
           </div>
         </section>
 
@@ -152,8 +152,8 @@ function App() {
         <section ref={contactRef} id="contact">
           <h2 className="sticky-header">Contact</h2>
           <div>
-            <img src="/Beau.png" alt="Beau" />
-            <img src="/Heau.png" alt="Hayley and Beau" />
+            <img src="Beau.png" alt="Beau" />
+            <img src="Heau.png" alt="Hayley and Beau" />
             <div>
               <p>
                 I am always looking for opportunities to bring your dreams to life. If you want to hire a developer 
