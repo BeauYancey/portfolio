@@ -10,5 +10,6 @@ export default defineConfig({
   },
   build: {
     outDir: "./build"
-  }
+  },
+  base: "/portfolio/"
 })
